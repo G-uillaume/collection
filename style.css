@@ -1,0 +1,27 @@
+.card {
+    height: 100%;
+    position: relative;
+    padding-bottom: 4.5rem;
+    box-shadow: 0 0 10px #aaa;
+}
+
+.card-footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card-footer i.fa-youtube {
+    color: red;
+}
+
+.card-footer i {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-footer i:hover {
+    font-size: 2rem;
+}
