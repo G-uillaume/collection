@@ -1,4 +1,5 @@
-const collection = [{
+const collection = [
+    {
         title: 'Les Indes Galantes',
         image: 'https://www.opera-online.com/media/images/avatar/work/279/xl_avatar.jpg?1399716084',
         author: 'Jean-Philippe Rameau',
@@ -76,7 +77,7 @@ const collection = [{
     {
         title: 'Requiem',
         image: 'https://api.europeana.eu/thumbnail/v2/url.json?size=w400&type=IMAGE&uri=http%3A%2F%2Fwww.theeuropeanlibrary.org%2Fimages%2Ftreasure%2Ftreasure-5.jpg',
-        author: 'Wolfang Amadeus Mozart',
+        author: 'Wolfgang Amadeus Mozart',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Wolfgang-amadeus-mozart_1.jpg',
         category: [{
                 name: 'Classic',
