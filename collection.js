@@ -1,10 +1,21 @@
-const collection = [
-    {
+const collection = [{
         title: 'Les Indes Galantes',
         image: 'https://www.opera-online.com/media/images/avatar/work/279/xl_avatar.jpg?1399716084',
         author: 'Jean-Philippe Rameau',
-        avatar : 'https://upload.wikimedia.org/wikipedia/commons/9/98/Attribu%C3%A9_%C3%A0_Joseph_Aved%2C_Portrait_de_Jean-Philippe_Rameau_%28vers_1728%29_-_001.jpg',
-        category: ['Baroque', 'Opera', 'France'],
+        avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Attribu%C3%A9_%C3%A0_Joseph_Aved%2C_Portrait_de_Jean-Philippe_Rameau_%28vers_1728%29_-_001.jpg',
+        category: [{
+                name: 'Baroque',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Opera',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'France',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=C8YQDlSkiKA',
             'https://open.spotify.com/album/1br46eEbwKlVYkTdbFGRqK?si=89qrYcSLTcqVFc4IVJpNCQ',
@@ -17,7 +28,19 @@ const collection = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Orlando_Furioso_18.jpg/1200px-Orlando_Furioso_18.jpg',
         author: 'Antonio Vivaldi',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Vivaldi.jpg/220px-Vivaldi.jpg',
-        category: ['Baroque', 'Opera', 'Italy'],
+        category: [{
+                name: 'Baroque',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Opera',
+                class: 'tag is-warning'
+            }, 
+            {
+                name: 'Italy',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=08-Px5Ft5s8',
             'https://open.spotify.com/album/7yzY8tvA6uL6xjl9hBVFtc?si=fw8MyvDVTiWZkJEEJ4WytQ',
@@ -30,7 +53,19 @@ const collection = [
         image: 'https://content.wdl.org/11619/thumbnail/1430177770/616x510.jpg',
         author: 'Johann Sebastian Bach',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Johann_Sebastian_Bach.jpg',
-        category: ['Baroque', 'Sacred music', 'Germany'],
+        category: [{
+                name: 'Baroque',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Sacred music',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'Germany',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=3FLbiDrn8IE&t=2s',
             'https://open.spotify.com/album/19pwFlrFA0awEGctBOtCCV?si=Pc-lXX0fTlC6MC3wa-zaOw',
@@ -43,7 +78,19 @@ const collection = [
         image: 'https://api.europeana.eu/thumbnail/v2/url.json?size=w400&type=IMAGE&uri=http%3A%2F%2Fwww.theeuropeanlibrary.org%2Fimages%2Ftreasure%2Ftreasure-5.jpg',
         author: 'Wolfang Amadeus Mozart',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Wolfgang-amadeus-mozart_1.jpg',
-        category: ['Classic', 'Sacred music', 'Germany'],
+        category: [{
+                name: 'Classic',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Sacred music',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'Germany',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=AZfZnbTgY4E',
             'https://open.spotify.com/album/5BVCfpBgtgGNuvb1TYUD5P?si=1FAqBKmKTAStU4fVZ0-Fww',
@@ -56,7 +103,19 @@ const collection = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Eroica_Beethoven_title.jpg',
         author: 'Ludwig van Beethoven',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Beethoven.jpg',
-        category: ['Classic', 'Symphonic', 'Germany'],
+        category: [{
+                name: 'Classic',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Symphonic',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'Germany',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=BgIjGSPmk7I',
             'https://open.spotify.com/album/4SdAMgzIpyiA0xvbwM8IM5?si=xZMxjXcsQhys6qiJBUNAJw',
@@ -69,7 +128,19 @@ const collection = [
         image: 'https://www.omifacsimiles.com/brochures/images/204.jpg',
         author: 'Johannes Brahms',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/1/15/JohannesBrahms.jpg',
-        category: ['Romantic', 'Chamber music', 'Germany'],
+        category: [{
+                name: 'Romantic',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Chamber music',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'Germany',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=R-TcdppKylw',
             'https://open.spotify.com/album/0b2mh4dTU2XxaybTMmKlbK?si=SCKSU7N1RXunVqFYHaOeXg',
@@ -82,7 +153,19 @@ const collection = [
         image: 'https://assets.classicfm.com/2012/34/faun-1345563606-view-0.jpg',
         author: 'Claude Debussy',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Claude_Debussy_ca_1908%2C_foto_av_F%C3%A9lix_Nadar.jpg',
-        category: ['Modern', 'Symphonic', 'France'],
+        category: [{
+                name: 'Modern',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Symphonic',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'France',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=aCphwVnD_hM',
             'https://open.spotify.com/album/3CKTDliChhr9L5mzjdANlc?si=reF8hJruRHiAdidMpYQr8Q',
@@ -95,7 +178,19 @@ const collection = [
         image: 'https://cdn.radiofrance.fr/s3/cruiser-production/2017/05/663b6450-4d2c-4994-93da-b83404ecb97f/600x337_sacre_du_printemps_dessin_titre.jpg',
         author: 'Igor Stravinsky',
         avatar: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUXFxcVFRcXFRUVFRUVGBUXFxgVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAPcAzAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAEAgMFBgABBwj/xABAEAABAwIDBQUGBAUDAwUAAAABAAIDBBESITEFQVFhcQYTIoGRBzKhscHRI0JSchQzYuHwFZKyFqLCJDRDc4L/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AkHDIqqyN/HPVXCRlmlVOQfjlBJVDfCovCpif3VF2QJDUsBbASwEGmtTgCwBKQYAtgLYWwEGWW7LdlsNQJWiE5gPBaIQMuCYlCJcEzIEEPWtUTKpqtULMgNoMwLJyqbkk7KthCfrG5ZcEEPS+87qjJm5ev1TFC3N3X6I2qyb6/VBAze95Jh6XUuzQ5cg3axRTBkhcSLjdkg6vtKV1iAFWYQe88Wqu1TALHJVGQfjFBJTDwqMIUpN7qiyg2AlgJLU4EGJQWglBBsJbQtAKE7U7TdG1sUZs9+pGrWaZcCfugb2t2hIcY6eznDJzzm0Hg0bzzUeW1jxcyyG+4Et+Smez+x42tBIuVdNmUjNMIQcujpqm18co/wD277qXhr6pgGJoeP6gb+oXTxsaJwthHkim7DhtmxBzqlqw/ItLHa4Tv5tO9LkCum1+zccjPALOGbSqY4OBLHiz25Hnzsgia4KDnCsNa1QU4QFbMbdoT1W2zVrZDfCE9WsyQR2zRcnr9EVWjIdT9UzskZu6/RE1enmfqgrVY0A+SDxBPV7vEhHNQLdJbRPwyZIMkImFwsg73P7pVLn/AJ5V2mHgKpcw/HKCQn91RZUrP7qjCEGNSwktCWEGwlBaCUECmhc9rq/vql0m69m/tbkPv5q97QmDIpHk2AY71tkud7LixHogvvZ+cEAX/wAtvVwoTa2/JUPYQzJOQAtrYW6K87NmbhyeD55oLJSPuBkjWuA14ICjmvrkimxjEeRt/nqgcksqb2zpmh0cuQcTgPMEZfIK5yx2GSpPbz+U1w3SMz4HEM/mPNBU60KAqhmrFXjVV+qGaAvZR8IRdU3wobZPu+aLqB4UEdsv3ndfoiKweHzP1TWzGXc7r9EVWN8PmUFHrz4kI9xRe0h4kG5A2CjoNEDZFRDJB6IlHgKpM4/HKvEvuFUmoH45QSEw8KiyFKTe6o4BBoBKCUFlkGBKAWgEtoQRG2q9rS6Bzbh8eZvY53At5hVHZ7C0O43t6Kf7Xx4Xh+uJgaOoJ+6jj+W/AeqB/ZlZZ9iC7kP8yVmjZFUNkDGOY+PMnGCLD8zmg4g3+rCQN9lFRbJcxzJoX2vvGrTwI4EXV0oKrumuPhu4eOzGgvG8OLQLhBBbD2pKypZAXEtuAeOl9fqrr2gqnRuAY8NvckkE52z03qmbBa2SrDwALuJA3AbrLoW0aYOaQQDvz/zmgg9k7YBJD6h2IG2F2Ei+tgb303Jvti/FSvtY5x2O4/iNsfij27Ia1z5O68UgsRiPd3wluLBa17OcL/1FJ/0sd0InZjE024hrw+3wQUquaq9VDNXDtEwCV4DQ22VgLDT5qo1gzQFbJZdo6o2qYcKG2O3wDqj61hDUEbsb3n9R8kRWaeZTGxB439R8kqvktfqUFM2qPH5IFwU1WQhxBQrqQIIuyMibknRSi6MiphZB3eQeEqk1A/HKvMg8JVIqf55QHzN8KjlKTDwhRlkGBKstAJYCDQCWAtgJVkEL2ogDomuP5TnxsR97KsOPhGav88THMc1/uEeLO1hxvuXPrtBcGm7cRwnW7dxQS+ya9zfASf7qxbWrMNPb8zsvJVGjN3BTO1GF4yOTR5XQS3Ypn/qGgkXAXUO5IkF+vHIhcV7MUUpmD2yYQ0gknQch9l2HZjPEX96X+EACwDQf1cfigXU2ZoMtbXyCAkkGIXyDQSVIVQUDtOuaI5Gg+J3htwGX0ugqe0ZS8ue7VxJPmqzWjNWaqbkq3XDNAXsceDzKNrb4M0JsJwweZUptHCY0Fcoa0RudfeQfggqusxuJ3XSqmlzJTPcIGpHpl70b3BKadToAu8RkTzZYKdFsiyQdof7pVIqP55V3f7pVJn/nlBKSjwhRRCmJR4AokhAkJbQofaHaKCK4BMjhuboOrlVto9oJpjbvMDf0tuPU6lBd67a0EI/EkaD+kZuPQBVfaHblxygjDf6n5n/aMh6qAZTg8/mhJ2YXEID6/tFUzMMb5PCdQGht+WW5ZSv/AA2nqPRRdlK7FbjD4t58beoyI9EEhRS+IW1OnVTMs5aRG5rjcC4aDe/NV2leWuB3tI+Csc8L5ZMYvmBoMrAb0E9sbC3wPppt1zhdlv4Z7slaaauaCDZ8Vzq5jg052sSRkctCorYstU0BpIsc/ddr5FWVpeR4iSTyyt9UD9XPle+4qozuxEnibqb2pLlhHDPkOChnhABUNyVd2hCbq1SMQc1GCgqlLViO4PVJk2m0t1+KnqjYzXbkGezreCCuu2iE3/HKy/8ATzOCV/0+zggrUVfZY6uCsv8AoDOCw7AZwQVX+Nz/ALImOsuFYhsJnBEN2Kzgg6TIPCVSJv55V5k9wqi1LwJ3OcQGgXJOgA1JQSO1a6OCHvJXYWj1J4NG8rme1tvvnJAOCPc0HM/uI16aIDtJtx1XMXknu23ETf0t424nU+m5AxuaeSA5pGmqx0DXZWsmowi2IBowWmxWV8VwHDdr0RGMaHJONj3agoISyfpZix7XjVpv1HBZUwFpskhqC31ezg8CaMXDgHZbx9wj+z9a+Ii4xs37yPtqmOwVe3/28mhuWHgd4+q6PS9je+8cbgHbz+V/Mjigdotrw+GzhbhfTlYrO0/aDuIcbGXLnYGXyGLCTfmAAntkbEjiqGxSOjbM65aC5uJwAuSxupyzUZ7YLMFLE3d3jz6NF/iUFDbtidry/vC4uNzfMHy3eSsOyNrtnOEjC/4HoqfMVtkpYWuabEG4KDohgSTAl7Nqe9iZJxGfXeiC1ACadINOjiFotQR5p1owo1wTTggFMSQY0S4JpyBoMToYtBOAILVM6zFyP2h1JawtB99waf2i5PyC6htEnCbLivb2qLqjB+gZ9XZ/K3qgrjCnWkHVM2TzUD0cZGbT9kRFU7nC3Pch428MkSAbWIDkBb4g8W37ih6CYhxY7VKpBY5HLgdR90jacdi2QdHddxQHVVLjHMaIOCiJyUhTy3bdORs8YI0IKAvYFK2OaJzjYYwCdwBNrrqVNt19A+Z0xvABdltS/TC3mTYea5fbJSm2NrSVTaSnaHY25G1jjffC1wvvtYZ7ygt22Jmx0s9c/D/EEMlEgsXtmBBigaeAsMX9NxvUF262sampxkWAjjwj9zA8/wDL4LNrXloamKRpiFLFdkR94P7xoJefzE3OfNQtTUd4Q+1vCxttcmsa3XyQAVAyTLwfCOZRMrb5bkiRoAQW3sVV4o3xnVpuP2n+91YlTuwv8yVxOZDbDkLq4XQYQkuC3daJQMvTTk69NOQNuTLk85NOQJCcTYTgQWidoLV597YSYq2fk+3oAPovQcvurzjtuTHUzu4yyemMgfBANHknmx39058Ey1OFtvugeY/cdUTE5BAneLomFw5j4oDMIdyO4rZBILXDPTk4fdYwX4FPsZ5jdxBQC0oJZlmWOxDnbd6XUxGQQCOo6FROz7tJB3FSdPldvmOh+xv8EBbQttmEckUrmlzWPGMA2JY42dY7iMiOYWmrb23BB3iyDoHahzZKKrlBa8Gms2dpF5Gh4IbI3dI3Q8eWg5/GfCOi3/qgZSVUFz+K2MNG7wvDnk9RYeaTF7o6INFM1RyHVPuGaErCS9oGgGaCX7LlxqWYdADi6W+9leiVzOOZ7HNczIg38uC6LTTh7GvH5gCgfJSC5JLkkuQacU25yxzkBUT4shp80BMU2IOOlj8LJiWrjAJMjQBr4hkonbzXmmlDDY4bnm0G5A8lzd85ta6DoNd2ugZlGDIeIyb6qNPa6U5gNHLMql4kTG6wQeiZT4T0XmmeTE5zhvc4+pJ+q9IVecTwN7T8ivNbdAgWE8yTccwmmpQKAhrL5tPklsntk4WQoJ3ImKYnUX6oD4HtcLhExgjRRsdOCbtJafUeiOilLRZ48xoeXJAurhcwte5jmh+hLSA7LVriLHLhwRRd4Q4at+I3j/OC65sTZ7jRxw1DI5WYQOIw6gG413XVO2p2IqYXuMEZlh95pDmlzR+hzSbkjTK90Ffa6+YSwUJS5Ym/pNudtR9vJFBBDVDvE9v6Who54pAplmgULVi0rub47+hKmgQgWBdBOIc4nde3ojIxdwHEgDmSbAJna8cUE7o433AtiGobJbxNad4H3QNm6unZqpa6EMv4mZEKlRS3OSluzr8NQ3xe8C0jyuguLikOK24qPq6ncD1KDKqe+Q0Q4TTncPRORG9igdZrnpoeh1XLNt0PcTyRbmuOHm05tPp8l1WyqHtEobtiqAMx+E/5sJ+IQUxpRLNEKwIlo4IPQ0h8JXnGtZhkkaNA949HEL0VM7wnovPvaBzDVTd2fD3jiOt8/K90AIKWkBKugUxERFCp2NyCRiRsZuLHMHJRsLkbC6yDoXZjtDtARBkUIqGM8Ny4McLDQk5ONiFfNh7ZqXttLSOiP7mPaeYLTf4LlXY/tK6je7w443kEtvZzXAWu06HorxRe0OnLhiilbbfhDteTCT8EFD7VBzK+VzmGMSveAC0tBs4lrhfUHPPmhdFf/ahLHUUBlaGudE5jmm4BZiOo352GW+655HKHNDuIBQA1rgZWtGtw53kLBSSgqGTHO53PLpopcv8A7oHJdpCAYhcyk/haYWnMF5vrbcFHxxbyLk5nmSoytqscmIHIZN6BS1JI9wBI9dUDsUm4iyuvs8oGSSmR9jgNm9d5+Kok0znObExvjcQBodV3bsbsJlLTtjAubXcTqXHUoIDtw9rJGhgALm3dbrkqk918t1rq1duNkS966YAujIAuMyyw3jgqnCBYeiAiE3wnkn4hY5b9T5JGzm3B5ZHyT7bA35i3mgc32TG0dnieGSE/nbYcnjNp9UY5ts7af4Vjwg4rhIJBFiCQRwIyI9QioxkpftpQ93VOcB4ZR3g4X0ePUX81FsGSDqXb/b/8NSlrTaSTwt4gb3eQ+i4spTb+1X1UxlectGjc1vDqozCgU1LCStgoNpYSQFtA9HJZScEtwocFPU8xBQT1O/NX/sL2rghjFPUHCQSWPtcEF1xiI0PVc3pJMiU9GLuuf8CDuNftbZ00TxLNA5jrNN3NyJyFt988rLiEIc2N8Qzc3E0ZgEi9g7zGaVSjE5zjnciw5DRPGPE4E6g3B5bx0QA7NpTGC54t1RbfxGuDXi5GZBuQjLISvhAHetycyxuMri+YPHJALBscD82LojYIHM4kcDqOhRjGgaZXzySoxdAPstuCsbK5pLW2N+ema7nsja8Moa1kgLrXLd/lfVcaa1WTsfM10gicQD7zHXwkW1APHeOiDqr9FRe29BGxzHsADnE4rZXAGvVXGlnxNNzctJa7mRv87gqD7UQNfGP1g+HpvQU/Z8VnO4EAp50edraA/wBk+2ie3CBne10T/CEFxPBAMMwkOaiaOmODzPzTjqUoKL7Qqe8Ecm9kmE/tePuGqkM0XU+2lDeinJ0Aa7z7xtly5jckEcAtgLS2gxaCUVlkGwsJWlq6BYzWwEgFPsN0DtNNYqSZJcOPK33UMUdQS6tO9BL02QHNERixQgOlkVG5A+0pivN2Fu95DR5nP4XT40TcTcTsW4ZN67ygevnblZOtNk3GLm/knQ1AsJcEha4FpsWm4PAhNhtkpgCDq/ZevbLE+Rp1cC8fpfgaHN9W36ELdVZ7vgqr2AlcZnwNd4XtxnkWWF/PFb0V3koCy9hlxQRkUYLydzRYdT/b5pmr904Rcncj6amNjwJJJ+3JOiJjUEbT0xDWi2gAPXenDABrminy52CHlhcd6Ct9t5MVFUNG9hsOYII+S5RFs91syAr97R6wRNjgabukON3JjT9XW/2lVVu0Q0AAXsgpZWrrLrSBWJKCQEpBtYFpaugxExkBapaN0hyGQ1J0H90dLSgC3x3oAzYpULbFa7shLidnmglYHEhHQoeihxkBrSSdwBJPkrZs3sbVyAHuxGDvkdh/7cz8EEH3d8h5ngEQ2PQDoBvPQK70XYVjXBsspe7VwYLNAtfCSblxPK1hnwvcqChgpGAsiDNbm13cy55zPIXKDktPsapcQG08vK7HNHW7gAiZeztY3FipZcm3BaGvudAAGkrrscgGG98TgTYm+XMXtvCJiz4cbjLJBxOHY0waMUE5cWk2EclsRJDWnIHLW4vu5rG9nqghoFPPkMyYnA4jm44gLnzXbgzFuy/y/wBEM2TFK5gAwNwgm1ziIJOfDRAL2X2cynpomiNrZO7b3hsMRda7sTtTmSj62QhuWZSmR3Js7LyPLL463TE5ZHe5O65zN7mwAtrnuHFAIYidScvRB1JIc3LU5ZXs0C7j13ealpYnG4sOVj8SCMvimXUZAG+3P580Acd7XORKZnma25cbAAkk5AAZknyTlYHj8p8hdcv9ovaQ4XUrLhz8pTn4Wb234neOF+IQUztPt81VTJOMmk4YxwibkwemZ5uKCjrDZNFrQEkP4BABdYtlaQbBWXWliBV1orAsQSlDt2WJgY0NIH6jIfgHAfBHM7TA+/Tsd0Ib82FVwLaC2Q7do3e/Sub0OP8A82fJSdD2i2Wyx/hC794d8u8cFQg5bug7Rs32k7PjFhGIxwY1/wAfwx81P0vtD2c6xMwaf6sP3XnkPSmyIPTVH2soH5sqIr787euSmIa+F+bZWO6PaV5QE5TkVa5puCR0JHyQesRA0kuzz1IPKwsd2p0tqnrcPNeW6LtHUxm7J5W9Hu+V7KwUXtN2jH/84f8A/Y0O+Isg9DOcbZfZMRwYA7DmXPLnE232y3ZW0XHqX2yTi3eU8buJDi2/QWyUzTe2KE+/SyD9r2n52QdOjZhGWeZ8rm/1QtTGS9ht4W3eeJfo0W1yBJVOi9rFCdWzt6safk5GQ+0zZrtZnt/dE/6AoLbCwgXOp+GuXxWyFAQdt9nv0q4h+4ln/IBHf61TFjnioiLGguc4SNIDRmTkUFc9p3ac0VMGxG08xLWHexg9+T4gDm6+5cHqNrON72PrnxupPtx2kdXVL5swz3Imn8sYPhuOJuXHmVVXlA/NU4twWMdkhkoOQaWisWINJSxYgxYtrEGrLS2sQaSrrFiDLpwNHFYsQIcEi62sQKa9LxLFiDA5OskK0sQLMxut9+VixBn8SVp011ixA29yZcFixA2sBW1iD//Z',
-        category: ['Modern', 'Ballet', 'Russia'],
+        category: [{
+                name: 'Modern',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Ballet',
+                class: 'tag is-warning'
+            },
+            {
+                name: 'Russia',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=YOZmlYgYzG4',
             'https://open.spotify.com/album/0jtDZ6elwRCAGerxkzozy3?si=eWDtZE30SsaPmklT1bwgeA',
@@ -108,7 +203,19 @@ const collection = [
         image: 'https://cdn.radiofrance.fr/s3/cruiser-production/2018/10/a59542f8-ac3b-4d02-bcec-c53d029a401c/600x337_klippfeld_1280x720.jpg',
         author: 'Olivier Messiaen',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Lezing_Franse_compoist_Olivier_Messianen_in_Koninklijk_Conservatorium_in_Den_Haa%2C_Bestanddeelnr_933-8263.jpg',
-        category: ['Modern', 'Chamber music', 'France'],
+        category: [{
+                name: 'Modern',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Chamber music',
+                class: 'tag is-warning',
+            },
+            {
+                name: 'France',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=QAQmZvxVffY',
             'https://open.spotify.com/album/74DM9nRD47sdXTs3gn3Jnc?si=n2WN-LheQBODQuVlg_mnoA',
@@ -121,7 +228,19 @@ const collection = [
         image: 'https://i.ytimg.com/vi/hfFzXOsxdok/maxresdefault.jpg',
         author: 'Guillaume Connesson',
         avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/G._Connesson.jpg',
-        category: ['Contemporary', 'Chamber music', 'France'],
+        category: [{
+                name: 'Contemporary',
+                class: 'tag is-link'
+            },
+            {
+                name: 'Chamber music',
+                class: 'tag is-warning',
+            },
+            {
+                name: 'France',
+                class: 'tag is-danger'
+            }
+        ],
         links: [
             'https://www.youtube.com/watch?v=hfFzXOsxdok',
             'https://open.spotify.com/track/7KheSukF5KjkJ504O2MnXQ?si=GcIbhyoMT-aXA63eSPfwPg',
