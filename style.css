@@ -1,3 +1,44 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@G-uillaume 
+G-uillaume
+/
+collection
+1
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+collection/style.css
+@G-uillaume
+G-uillaume ajout de la barre de recherche et de la fonction de filtre
+Latest commit 5f3288a 15 minutes ago
+ History
+ 1 contributor
+50 lines (42 sloc)  666 Bytes
+  
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -30,3 +71,24 @@
 .card-footer i:hover {
     font-size: 2rem;
 }
+
+.darkMode {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none
+}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
