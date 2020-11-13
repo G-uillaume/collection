@@ -11,7 +11,10 @@
     <script src="script.js" async></script>
     <!-- <link rel="stylesheet" href="debug.css"> -->
 </head>
-<body>
+<body class="has-background-light">
+    <button class="darkMode  has-background-light icon is-large has-text-grey">
+        <i class="fas fa-toggle-off fa-2x"></i>
+    </button>
     <header class="hero">
         <div class="hero-body">
             <div class="container columns is-centered">
@@ -29,6 +32,18 @@
             </div>
         </div>
     </header>
+    <div class="section">
+        <div class="columns is-centered">
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" id="filter_input" type="text" autofocus>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
     <main class="section">
         <div class="container">
             <div class="columns is-centered">
