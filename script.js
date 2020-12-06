@@ -161,7 +161,9 @@ const filterSeries = pattern => {
 }
 
 document.querySelector('#filter_input')
-.addEventListener('input', input => {
-    filterSeries(input.target.value);
+.addEventListener('keyup', input => {
+    const inputValue = input.target.value;
+    const pattern = new RegExp(inputValue, 'gim')
+    filterSeries(pattern)
 });
 
