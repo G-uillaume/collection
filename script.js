@@ -27,22 +27,29 @@ darkMode.addEventListener('click', () => {
     })
 })
 
-const filterSeries = pattern => {
-    const results = [];
-
-    for (let serie of collection) {
-            if (serie.title.match(pattern) || (serie.author.match(pattern)) || (serie.description.match(pattern))) {
-                results.push(serie);
-            } else {
-                for (let elem of serie.category) {
-                    if (elem.name.match(pattern)) {
-                        results.push(serie);
+const filterSeries = (pattern) => {
+    let results = [];
+    const mainContainer = document.querySelector(".is-multiline");
+    
+        for (let serie of collection) {
+                if (serie.title.match(pattern) || (serie.author.match(pattern)) || (serie.description.match(pattern))) {
+                    mainContainer.innerHTML= '';
+                    results.push(serie);
+                } 
+                else if (pattern === 'all') {
+                    results.push(serie)
+                }
+                else {
+                    for (let elem of serie.category) {
+                        if (elem.name.match(pattern)) {
+                            mainContainer.innerHTML= '';
+                            results.push(serie);
+                        }
                     }
                 }
-            }
-    }
-    const mainContainer = document.querySelector(".is-multiline");
-    mainContainer.innerHTML= '';
+        }
+    
+        
     for (let element of results) {
         // CONTAINER
         const newDiv = document.createElement('div');
@@ -159,7 +166,10 @@ const filterSeries = pattern => {
         mainContainer.appendChild(newDiv);
     }
 }
-
+window.addEventListener('load', () => {
+    const pattern = 'all'
+    filterSeries(pattern)
+})
 document.querySelector('#filter_input')
 .addEventListener('keyup', input => {
     const inputValue = input.target.value;
